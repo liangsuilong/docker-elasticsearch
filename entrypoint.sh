@@ -23,6 +23,6 @@ if [[ $1 == 'elasticsearch' ]]; then
 
 elif [[ $1 == 'install-plugin' ]]; then
 	cd ${ES_HOME}
-	chown -R elastisearch:elasticsearch ${ES_HOME}
-	exec gosu elasticsearch "${ES_HOME}/bin/elasticsearch-plugin" "install" "${@:2}"
+	chown -R elasticsearch:elasticsearch ${ES_HOME}
+	exec gosu elasticsearch "${ES_HOME}/bin/elasticsearch-plugin" "install" "$2"
 fi 

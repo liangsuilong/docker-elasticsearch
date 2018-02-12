@@ -36,4 +36,4 @@ VOLUME ["/opt/elasticsearch/data/", "/etc/elasticsearch/", "/opt/elasticsearch/l
 EXPOSE 9200 9300
 
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
-CMD ["elastisearch"]
+CMD ["elasticsearch"]
